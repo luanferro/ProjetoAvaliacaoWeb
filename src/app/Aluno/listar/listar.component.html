@@ -1,34 +1,30 @@
 <div class="ng-container">
-    <div class="card">
-        <div class="card-header">
-            <h3>Alunos</h3>
+    <div class="p-grid">
+        <div class="titulo">
+            <h2>Situação dos Alunos</h2>
         </div>
+        <br>
+        <br>
         <div class="card-board">
-            <table class="table table-hover">
-                <thead>
+            <p-table [columns]="cols" [value]="alunos">
+                <ng-template pTemplate="header" let-columns>
                     <tr>
-                        <th>Aluno</th>
-                        <th>Bimestre 1</th>
-                        <th>Bimestre 2</th>
-                        <th>Bimestre 3</th>
-                        <th>BImestre 4</th>
-                        <th>Media Final</th>
-                        <th>Situacao</th>
+                        <th *ngFor="let col of columns">
+                            {{col.header}}
+                        </th>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr class="text-center">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                </ng-template>
+                <ng-template pTemplate="body" let-rowData let-columns="columns">
+                    <tr>
+                        <td *ngFor="let col of columns">
+                            {{rowData[col.field]}}
+                        </td>
                     </tr>
-                </tbody>
-            </table>
+                </ng-template>
+            </p-table>
         </div>
     </div>
-    
+
+
+
 </div>

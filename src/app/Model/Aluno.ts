@@ -1,4 +1,4 @@
-export class Aluno{
-    id:number;
-    nome:String;
+export interface Aluno{
+    id?: number;
+    nome: String;   
 }

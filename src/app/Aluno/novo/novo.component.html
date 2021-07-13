@@ -1,1 +1,41 @@
-<p>novo works!</p>
+<div class="ng-container col-md-6">
+    <div>
+        <div class="titulo">
+            <h2>Inserir Notas</h2>
+        </div>
+        <br>
+        <br>
+        <div class="card-board">
+           <form>
+            <div class="p-field p-grid">
+                <label for="aluno" class="p-col-fixed" style="width:100px">Aluno</label>
+                <div class="p-col">
+                    <p-dropdown  [options]="alunos" [(ngModel)]="nota.aluno" name="aluno" placeholder="Select" optionLabel="nome" optionValue="nome"></p-dropdown> 
+                </div>
+            </div>
+            <div class="p-field p-grid">
+                <label for="bimestre" class="p-col-fixed" style="width:100px">Bimestre</label>
+                <div class="p-col">
+                    <p-dropdown [options]="bimestres" [(ngModel)]="nota.bimestre" name="bimestre" placeholder="Select"></p-dropdown> 
+                </div>
+            </div>
+            <div class="p-field p-grid">
+                <label for="avaliacao" class="p-col-fixed" style="width:100px">Avaliacao</label>
+                <div class="p-col">
+                    <p-dropdown [options]="avaliacoes" [(ngModel)]="nota.avaliacao" name="avaliacao" placeholder="Select" optionLabel="nome" optionValue="nome"></p-dropdown> 
+                </div>
+            </div>
+            <div class="p-field p-grid">
+                <label for="nota" class="p-col-fixed" style="width:100px">Nota</label>
+                <div class="p-col">
+                    <input id="nota" [(ngModel)]="nota.nota" name="nota" type="text" pInputText> 
+                </div>
+            </div>            
+            <button pButton type="button" (click)="Salvar(nota)" class="p-button-raised p-button-rounded">Salvar</button>       
+           </form>
+        </div>
+    </div>
+
+
+
+</div>
