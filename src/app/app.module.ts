@@ -9,7 +9,7 @@ import {TableModule} from 'primeng/table';
 import {ButtonModule} from 'primeng/button';
 import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ServiceService} from '../app/Service/service.service';
 import {HttpClientModule} from '@angular/common/http';
 import {InputTextModule} from 'primeng/inputtext';
@@ -35,6 +35,7 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
     AccordionModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     InputTextModule,
     CheckboxModule,

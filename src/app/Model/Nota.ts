@@ -2,8 +2,12 @@ export class Nota {
     id?: number;
     aluno!: String;
     bimestre!: number;
-    avaliacao!: String;
-    nota!: number;
+    faltas!: number;
+    notapresenca!: number;
+    notaatividades!: number;
+    notatrabalho!: number;
+    notaprova!: number;
+   
     
     constructor(){}
 };

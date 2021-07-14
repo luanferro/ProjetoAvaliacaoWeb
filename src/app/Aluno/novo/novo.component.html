@@ -1,41 +1,56 @@
-<div class="ng-container col-md-6">
+<div class="container">
     <div>
-        <div class="titulo">
-            <h2>Inserir Notas</h2>
-        </div>
-        <br>
-        <br>
-        <div class="card-board">
+        <h2>Inserir Notas</h2>
+       <div>
            <form>
-            <div class="p-field p-grid">
-                <label for="aluno" class="p-col-fixed" style="width:100px">Aluno</label>
-                <div class="p-col">
-                    <p-dropdown  [options]="alunos" [(ngModel)]="nota.aluno" name="aluno" placeholder="Select" optionLabel="nome" optionValue="nome"></p-dropdown> 
+            <div>
+                <div class="p-field p-grid">
+                    <label for="aluno" class="p-col-fixed" >Aluno</label>
+                    <div class="p-col">
+                        <p-dropdown  [options]="alunos" [(ngModel)]="nota.aluno" name="aluno" placeholder="Select" optionLabel="nome" optionValue="nome"></p-dropdown> 
+                    </div>
                 </div>
+                <div class="p-field p-grid">
+                    <label for="bimestre" class="p-col-fixed" >Bimestre</label>
+                    <div class="p-col">
+                        <p-dropdown [options]="bimestres" [(ngModel)]="nota.bimestre" name="bimestre" placeholder="Select"></p-dropdown> 
+                    </div>
+                </div>
+                <div class="p-field p-grid">
+                    <label for="notapresenca" class="p-col-fixed" >Nota Participação em Sala de Aula</label>
+                    <div class="p-col">
+                        <input id="notapresenca" [(ngModel)]="nota.notapresenca" name="notapresenca" type="text" pInputText> 
+                    </div>
+                </div>  
+                <div class="p-field p-grid">
+                    <label for="notaatividades" class="p-col-fixed" >Nota Entrega de Tarefas</label>
+                    <div class="p-col">
+                        <input id="notaatividades" [(ngModel)]="nota.notaatividades" name="notaatividades" type="text" pInputText> 
+                    </div>
+                </div>  
+                <div class="p-field p-grid">
+                    <label for="notatrabalho" class="p-col-fixed" >Nota Trabalho bimestral</label>
+                    <div class="p-col">
+                        <input id="notatrabalho" [(ngModel)]="nota.notatrabalho" name="notatrabalho" type="text" pInputText> 
+                    </div>
+                </div>  
+                <div class="p-field p-grid">
+                    <label for="notaprova" class="p-col-fixed" >Nota Prova Bimestral</label>
+                    <div class="p-col">
+                        <input id="notaprova" [(ngModel)]="nota.notaprova" name="notaprova" type="text" pInputText> 
+                    </div>
+                </div>     
+                <div class="p-field p-grid">
+                    <label for="faltas" class="p-col-fixed">Faltas</label>
+                    <div class="p-col">
+                        <input  id="faltas" [(ngModel)]="nota.faltas" name="faltas" type="text" pInputText> 
+                    </div>
+                </div>      
             </div>
-            <div class="p-field p-grid">
-                <label for="bimestre" class="p-col-fixed" style="width:100px">Bimestre</label>
-                <div class="p-col">
-                    <p-dropdown [options]="bimestres" [(ngModel)]="nota.bimestre" name="bimestre" placeholder="Select"></p-dropdown> 
-                </div>
-            </div>
-            <div class="p-field p-grid">
-                <label for="avaliacao" class="p-col-fixed" style="width:100px">Avaliacao</label>
-                <div class="p-col">
-                    <p-dropdown [options]="avaliacoes" [(ngModel)]="nota.avaliacao" name="avaliacao" placeholder="Select" optionLabel="nome" optionValue="nome"></p-dropdown> 
-                </div>
-            </div>
-            <div class="p-field p-grid">
-                <label for="nota" class="p-col-fixed" style="width:100px">Nota</label>
-                <div class="p-col">
-                    <input id="nota" [(ngModel)]="nota.nota" name="nota" type="text" pInputText> 
-                </div>
-            </div>            
-            <button pButton type="button" (click)="Salvar(nota)" class="p-button-raised p-button-rounded">Salvar</button>       
+            <div class="botao-salvar">
+                <button pButton type="button" (click)="Salvar(nota)" class="p-button-raised p-m-y-3 p-button-rounded">Salvar</button> 
+            </div>      
            </form>
         </div>
     </div>
-
-
-
 </div>

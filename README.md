@@ -1,27 +1,155 @@
-# ProjetoAvaliacao
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
-## Development server
+<h1 align="center">
+      <a href="#" alt="Boletim Escolar"> Ecoleta </a>
+</h1>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<h3 align="center">
+    Cadastro e Consulta de notas dos alunos  
+</h3>
 
-## Code scaffolding
+<p align="center">
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  
+  <a href="https://github.com/luanferro/ProjetoAvaliacao/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tgmarinho/README-ecoleta">
+  </a>
+    
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+   <a href="https://github.com/tgmarinho/README-ecoleta/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/tgmarinho/README-ecoleta?style=social">
+  </a>
 
-## Build
+  <a href="https://github.com/luanferro>
+    <img alt="Feito por luanferro" src="https://img.shields.io/badge/feito%20por-Rocketseat-%237519C1">
+  </a> 
+</p>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<h4 align="center">
+	🚧   Concluído 🚀 🚧
+</h4>
 
-## Running unit tests
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Sobre o projeto](#-sobre-o-projeto)
+   * [Funcionalidades](#-funcionalidades)
+   * [Como executar o projeto](#-como-executar-o-projeto)
+     * [Pré-requisitos](#pré-requisitos)
+     * [Rodando o Backend (servidor)](#user-content--rodando-o-backend-servidor)
+     * [Rodando a aplicação web (Frontend)](#user-content--rodando-a-aplicação-web-frontend)
+   * [Tecnologias](#-tecnologias)
+     * [WebSite](#user-content-website--react----typescript)
+     * [Server](#user-content-server--nodejs----typescript)
+   * [Autor](#-autor)
+   * [Licença](#user-content--licença)
+<!--te-->
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## 💻 Sobre o projeto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Esse projeto consiste em um boletim escolar onde o usuário pode cadastrar as notas e faltas dos alunos e consultar sua devida situação escolar. Desenvolvido com intuito de participar de um processo seletivo.
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## ⚙️ Funcionalidades
+
+- [x] Usuarios pode cadastrar notas e faltas selecionando/inserindo:
+  - [x] nome do aluno
+  - [x] bimestre o qual as notas pertencem
+  - [x] as notas referente as 4 avaliacoes existentes
+  - [x] o numero de faltas daquele bimestre
+
+
+---
+
+## 🚀 Como executar o projeto
+
+Este projeto é divido em duas partes:
+1. Backend (pasta server + banco de dados) 
+2. Frontend (pasta web)
+
+💡O Frontend precisa que o Backend esteja sendo executado para funcionar.
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [xampp](https://www.apachefriends.org/pt_br/download.html), [eclipse](https://www.eclipse.org/downloads/)
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+#### 🎲 Rodando o Backend (servidor)
+
+```bash
+
+# Clone este repositório
+$ git clone https://github.com/luanferro/ProjetoAvaliacao.git
+
+```
+Abra o Eclipse:
+
+1 - Abra o eclipse e importe o projeto clonado;
+2 - Atualize o projeto com alt + F5 para baixar todas as dependencias;
+3 - inicie o projeto;
+
+Execute o xampp e inicie os servicos apache e mysql;
+Clique em admin no servico mysql e sera iniciado o phpmyadmin
+Importe o banco de dados que se encontra dentro da pasta ProjetoAvaliacao/documentos/bancodedados/
+
+#### 🧭 Rodando a aplicação web (Frontend)
+
+```bash
+
+# Clone este repositório
+$ git clone https://github.com/luanferro/ProjetoAvaliacaoWeb.git
+
+# Caso nao tenha o angular instado sera preciso instalar
+$ npm install -g @angular/cli
+
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd ProjetoAvaliacaoWeb
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicacao 
+$ ng serve
+
+# A aplicação será aberta na porta:4200 - acesse http://localhost:4200
+
+```
+
+---
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+#### **Website**  ([Angular](https://angular.io/)  +  [PrimeNg](https://www.primefaces.org/primeng/))
+
+#### [](https://github.com/tgmarinho/Ecoleta#server-nodejs--typescript)**Server**  (Java +  [SpringBoot](https://spring.io/projects/spring-boot) + [JPA](https://spring.io/projects/spring-data-jpa))
+
+#### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
+
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)** 
+
+---
+
+## 🦸 Autor
+
+ <img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4E03AQEiIsySLzHFAw/profile-displayphoto-shrink_200_200/0/1553716492067?e=1631750400&v=beta&t=gf08aDDZoNXMBsdC-tpqrLL8juPk7BNPa2jYGL6BVDM" width="100px;" alt=""/>
+ <br />
+ <sub><b>Luan Ferro</b></sub></a> <a href="https://www.instagram.com/ferroluan/" title="Rocketseat"></a>
+ <br />
+
+[[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/luan-ferro-186771172/) 
+[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](luanferror@gmail.com)
+
+---
+
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito com ❤️ por Luan Ferro 👋🏽 [Entre em contato!](https://www.linkedin.com/in/luan-ferro-186771172/)
+
+---
