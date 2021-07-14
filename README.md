@@ -18,7 +18,7 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
   
 
-  <a href="https://github.com/luanferro>
+  <a href="https://github.com/luanferro">
     <img alt="Feito por luanferro">
   </a> 
 </p>
