@@ -1,7 +1,7 @@
 
 
 <h1 align="center">
-      <a href="#" alt="Boletim Escolar"> Ecoleta </a>
+      <a href="#" alt="Boletim Escolar"> Boletim Escolar </a>
 </h1>
 
 <h3 align="center">
@@ -11,17 +11,15 @@
 <p align="center">
 
   
-  <a href="https://github.com/luanferro/ProjetoAvaliacao/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/tgmarinho/README-ecoleta">
+  <a href="https://github.com/luanferro/ProjetoAvaliacaoWeb/commit/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/luanferro/ProjetoAvaliacaoWeb">
   </a>
     
-   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-   <a href="https://github.com/tgmarinho/README-ecoleta/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/tgmarinho/README-ecoleta?style=social">
-  </a>
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+  
 
   <a href="https://github.com/luanferro>
-    <img alt="Feito por luanferro" src="https://img.shields.io/badge/feito%20por-Rocketseat-%237519C1">
+    <img alt="Feito por luanferro">
   </a> 
 </p>
 
@@ -54,20 +52,28 @@ Esse projeto consiste em um boletim escolar onde o usuário pode cadastrar as no
 
 ## ⚙️ Funcionalidades
 
-- [x] Usuarios pode cadastrar notas e faltas selecionando/inserindo:
+- [x] Usuarios podem cadastrar notas e faltas selecionando/inserindo:
   - [x] nome do aluno
   - [x] bimestre o qual as notas pertencem
   - [x] as notas referente as 4 avaliacoes existentes
   - [x] o numero de faltas daquele bimestre
-
+- [x] Usuarios podem consultar a situacao dos alunos em uma tabela que contem as seguinte colunas:
+  - [x] Nome do Aluno
+  - [x] Media do 1 Bimestre
+  - [x] Media do 2 Bimestre
+  - [x] Media do 3 Bimestre
+  - [x] Media do 4 Bimestre
+  - [x] Media Final do ano letivo
+  - [x] Percentual de presença do aluno
+  - [x] Situação do aluno (Aprovado, Reprovado ou Em Recuperação)
 
 ---
 
 ## 🚀 Como executar o projeto
 
 Este projeto é divido em duas partes:
-1. Backend (pasta server + banco de dados) 
-2. Frontend (pasta web)
+1. Backend (projeto ProjetoAvaliacao + banco de dados) 
+2. Frontend (projeto ProjetoAvaliacaoWeb)
 
 💡O Frontend precisa que o Backend esteja sendo executado para funcionar.
 
@@ -92,8 +98,8 @@ Abra o Eclipse:
 3 - inicie o projeto;
 
 Execute o xampp e inicie os servicos apache e mysql;
-Clique em admin no servico mysql e sera iniciado o phpmyadmin
-Importe o banco de dados que se encontra dentro da pasta ProjetoAvaliacao/documentos/bancodedados/
+Clique em admin no servico mysql e sera iniciado o phpmyadmin;
+Importe o banco de dados que se encontra dentro da pasta ProjetoAvaliacao/documentos/bancodedados/;
 
 #### 🧭 Rodando a aplicação web (Frontend)
 
@@ -141,8 +147,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
  <sub><b>Luan Ferro</b></sub></a> <a href="https://www.instagram.com/ferroluan/" title="Rocketseat"></a>
  <br />
 
-[[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/luan-ferro-186771172/) 
-[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](luanferror@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/luan-ferro-186771172/)](https://www.linkedin.com/in/luan-ferro-186771172/) 
+[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=luanferror@gmail.com )](luanferror@gmail.com)
 
 ---
 
